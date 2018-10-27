@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/game.js">
+    </script>
+</head>
+
+<body>
+    <div class="jumbotron" style="background-color: rgb(19, 84, 100); margin:0px">
+        <h1 class="display-3" style="color: lightgray">Crystal Collector!</h1>
+        <p class="lead" style="color: lightgray">Click on the four crystals to find out their value, then try to match
+            the generated number below!</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <img src="assets/images/red.png" width="128" height="128" alt="red" id="redCrystalButton">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="assets/images/green.png" width="128" height="128" alt="green" id="greenCrystalButton">
+                </div>
+
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="assets/images/blue.png" width="128" height="128" alt="blue" id="blueCrystalButton">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <img src="assets/images/yellow.png" width="128" height="128" alt="yellow" id="yellowCrystalButton">
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="row">
+
+            <div class="col-5">
+                <div class="card card-body">
+                    <h3 class="card-title text-center" style="color: rgb(19, 84, 100)">
+                        Computer total:
+                        <h3 class="card-text text-center" id="computerNumber">
+
+                        </h3>
+                    </h3>
+                </div>
+                <br>
+                <div class="card card-body">
+                    <h2 class="card-title text-center top" style="color: rgb(19, 84, 100)">
+                        User total:
+                    </h2>
+                    <h3 class="card-text text-center" id="userTotalNum">
+
+                    </h3>
+                </div>
+                <br>
+
+                <div class="card card-body">
+                    <h2 class="card-title text-center" style="color: rgb(19, 84, 100)">
+                        Wins:
+
+                    </h2>
+                    <h3 class="card-text text-center" id="winsHtml">
+
+                    </h3>
+
+                </div>
+                <br>
+                <div class="card card-body">
+                    <h2 class="card-title text-center" style="color: rgb(19, 84, 100)">
+                        Losses:
+                    </h2>
+                    <h3 class="card-text text-center" id="losses">
+
+                    </h3>
+                </div>
+                <br>
+
+            </div>
+            <div class="col-2">
+                <p></p>
+            </div>
+            <div class="col-5">
+                <div class="card">
+
+                    <div class="card card-body" id="clueBox">
+
+                        <p class="card-title text-left">
+                            You will be given a random number at the start of the game.
+                            <br>
+                            There are four crystals below. By clicking on a crystal you will add a specific ammount of
+                            points to your total score.
+                            <br>
+                            You win the game by matching your total score to a random number, you lose the game if your
+                            total score goes above the random number.
+                            <br>
+                            The value of each crystal is hidden from you until you click on it.
+                            <br>
+                            Each time when the game starts, the game will change the values of each crystal.
+                        </p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
